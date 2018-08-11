@@ -15,10 +15,8 @@ def player_move(icon):
     if icon=="X":
         number=1
     elif icon=="O":
-        number=2
-            
-    print("your turn player{}".format(number))
-    
+        number=2            
+    print("your turn player{}".format(number))    
     choice =int(input("Enter the number 1-9 "))
     if board[choice-1]=="":
         board[choice-1]=icon
@@ -39,6 +37,9 @@ def is_victory(icon):
         return True;
     else:
         return False;
+    
+    
+    
 def is_draw():
     if "" not in board:
         return True
