@@ -1,5 +1,6 @@
 #x=int(input("Enter the number"))
-"""sum=0
+"""
+sum=0
 num=x
 while(num>0):
     remd=num%10
@@ -11,8 +12,8 @@ if sum == x:
 else:
     print("no") """
 
-def angramnum(star,last):
-    for x in range (star,last):
+def angramnum(start,last):
+    for x in range (start,last):
         
         sum=0
         l=len(str(x))
@@ -27,7 +28,7 @@ def angramnum(star,last):
             print("no" + str(x))
     
 
-star=int(input("Enter the start number "))
+start=int(input("Enter the start number "))
 last=int(input ("Enter the last number "))
-result=angramnum(star,last)
+result=angramnum(start,last)
 
