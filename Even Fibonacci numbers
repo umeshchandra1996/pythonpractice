@@ -1,0 +1,32 @@
+#!/bin/python3
+
+import sys
+
+"""def fab(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    else:
+        return fab(n-1)+fab(n-2)"""
+
+
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+    a=1
+    b=2
+    fab=[1,2]
+    while b < n:
+        a, b = b, a+b
+        fab.append(b)
+   #print(fab)
+    sum=0
+    i=0
+   #for i in range(0,len(fab)):
+    while(fab[i]<n):
+        if fab[i]%2==0:
+            sum+=fab[i]
+        i+=1
+    print(sum)
+            
