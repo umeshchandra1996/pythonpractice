@@ -46,26 +46,26 @@ def is_draw():
     else:
         return False
     
-       
-while True:
-    print_board()
-    player_move("X")
-    print_board()
-    if is_victory("X"):
-        print("X is win!!!!")
-        break
-    elif is_draw():
-        print("draw")
-        break
+if __name__=='__main__':
+    while True:
+        print_board()
+        player_move("X")
+        print_board()
+        if is_victory("X"):
+            print("X is win!!!!")
+            break
+        elif is_draw():
+            print("draw")
+            break
 
-    player_move("O")
-    print_board()
-    if is_victory("O"):
-        print("O is win!!!!")
-        break
-    elif is_draw():
-        print("draw")
-        break 
+        player_move("O")
+        print_board()
+        if is_victory("O"):
+            print("O is win!!!!")
+            break
+        elif is_draw():
+            print("draw")
+            break 
 
     
     
